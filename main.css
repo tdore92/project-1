@@ -1,0 +1,38 @@
+{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  border: 0px solid grey;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  width: 6%;
+  height: 7%;
+  border: 1px solid green;
+  background-color: lightcoral;
+}
+
+.harry {
+  background-image: url('https://i.pinimg.com/474x/6d/f4/51/6df4519f2c0380c5acc377b5a2190885.jpg');
+  background-size: cover;
+}
+
+.pellet {
+  background-image: url(/images/rarecandy.png);
+  background-size: cover;
+}
