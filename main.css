@@ -32,7 +32,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background-image: url(/images/space-background.jpeg);
+  background-image: url(./images/space-background.jpeg);
   background-size:cover 150%;;
 }
 
@@ -54,12 +54,12 @@ body {
 }
 
 .caterpie-left {
-  background-image: url(/images/morph-ball-sprite.png);
+  background-image: url(./images/morph-ball-sprite.png);
   background-size: cover;
 }
 
 .pellet {
-  background-image: url(/images/metroid-sprite.png);
+  background-image: url(./images/metroid-sprite.png);
   background-size: cover;
 }
 
@@ -87,8 +87,6 @@ body {
   body {
     height: 130vh;
     
-    background-image: url(/images/pokeball-background.jpeg);
-    background-size:auto;
   }
 
 }
