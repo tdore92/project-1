@@ -1,5 +1,28 @@
-{
-  box-sizing: border-box;
+#title {
+  height: 90%;
+  width:100%;
+}
+
+#tagline {
+  color: white;
+  font-family: monospace;
+  font-size: xx-large;
+  justify-content: center;
+}
+
+#oneLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  color: white;
+  margin-bottom: 10px;
+  font-family:monospace;
+  font-size: x-large;
+}
+
+#button {
+  margin-bottom: 5px;
 }
 
 body {
@@ -8,7 +31,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0
+  margin: 0;
+  background-image: url(/images/space-background.jpeg);
+  background-size:cover 150%;;
 }
 
 .grid {
@@ -18,21 +43,52 @@ body {
   width: 600px;
   height: 600px;
   flex-wrap: wrap;
+  margin-bottom:300px;
 }
 
 .grid div {
   width: 6%;
   height: 7%;
-  border: 1px solid green;
-  background-color: lightcoral;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: black;
 }
 
-.harry {
-  background-image: url('https://i.pinimg.com/474x/6d/f4/51/6df4519f2c0380c5acc377b5a2190885.jpg');
+.caterpie-left {
+  background-image: url(/images/morph-ball-sprite.png);
   background-size: cover;
 }
 
 .pellet {
-  background-image: url(/images/rarecandy.png);
+  background-image: url(/images/metroid-sprite.png);
   background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .grid{
+    justify-content: center;
+  }
+
+  #oneLine {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    color: white;
+    margin-bottom: 1px;
+    font-family:monospace;
+    font-size: large;
+  }
+
+  #pokeTitle {
+    display: none;
+  }
+
+  body {
+    height: 130vh;
+    
+    background-image: url(/images/pokeball-background.jpeg);
+    background-size:auto;
+  }
+
 }
