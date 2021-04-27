@@ -64,26 +64,3 @@ body {
   background-size: cover;
 }
 
-@media screen and (max-width: 600px) {
-  
-  .grid{
-    justify-content: center;
-  }
-
-  #oneLine {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    width: 100%;
-    color: white;
-    margin-bottom: 1px;
-    font-family:monospace;
-    font-size: medium;
-  }
-
-  body {
-    height: 130vh;
-    
-  }
-
-}
