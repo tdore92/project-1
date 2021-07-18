@@ -161,8 +161,6 @@ function gameOver() {
     elements.cells[i].classList.remove('caterpie-left')
   }
   elements.snakeArray = [97, 98, 99]
-  //alert('Game Over! Gotta go slower!')
-  //score = 0
   clearInterval(moveInterval)
 
 }
