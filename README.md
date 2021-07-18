@@ -31,7 +31,7 @@
 
  <h3>Functionality</h3>
 
- <h4>Movement</h4>
+ <h3>Movement</h4>
 
   <p>Figuring out the logic for the snakes movement was undoubtedly the most difficult element of this project. The solution was to- on an event listener- pop() the snake index from the array and unshift() it with a calculation equal to the keystroke, before adding the index back in. A setInterval would, with every pass, repeat this function until the next keydown event.</p>
 
@@ -47,7 +47,7 @@
 
  <p>The pellet itself consists of a single let variable with a number value, initially 36. Once it had been ‘eaten’, the eatPellet() function is triggered, removing the pellet from the classList, adding 100 points to the score variable (reflected in the score innerHTML) and replacing the initial pellet with a Math.random value. In turn, spawnPellet() adds the now randomly located pellet back into classList after checking for cells not containing the snake.</p>
 
-<h1>Screenshot</h1>
+<img src="https://i.imgur.com/WlwChmr.png" alt="metroid snake image"/>
 
 <h3>Future Features</h3>
 
@@ -58,6 +58,6 @@
 
 <h3>Lessons Learned</h3>
 
- <p>While the logic for snake turned out to be fairly simple it was a lesson in getting into that problem solving mindset. Once I had the solution for actual movement the other factors became less daunting to approach.</p>
-<br/>
-<p>My planning could have been more concise- with no concrete solution to the main problems at hand I quickly became overwhelmed with the work ahead.</p>
+ <li>While the logic for snake turned out to be fairly simple it was a lesson in getting into that problem solving mindset. Once I had the solution for actual movement the other factors became less daunting to approach.</li>
+
+<li>My planning could have been more concise- with no concrete solution to the main problems at hand I quickly became overwhelmed with the work ahead.</li>
