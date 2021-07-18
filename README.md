@@ -52,7 +52,7 @@
 <h3>Future Features</h3>
 
 <li>
- <ul>Two player mode.</ul>
+ <li>Two player mode.</li>
  <ul>Bug fixes - the pellet occasionally will spawn within the snake body.</ul>
  <ul>setInterval speed increase as a difficulty rise.</ul>
  <ul>Endgame functionality- should the player successfully fill the grid with the snake.</ul>
