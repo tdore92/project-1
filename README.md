@@ -1,7 +1,7 @@
-# project-1
+<h1>Project-1<h1>
 
-<h1>Overview</h1>
-<br/>
+<h2>Overview</h2>
+
 <p>For our first GA project, we were asked to create a grid based game, rendered in browser, using JavaScript, CSS and HTML. We had multiple game type to choose from- I decided upon the 90’s classic, Snake. This project was to be created solo.</p>
 
 <h2>Brief</h2>
@@ -15,13 +15,13 @@
 
 <h2>Technologies Used</h2>
 
-<p>HTML5</p>
-<p>CSS</p>
-<p>JavaScript (ES6)</p>
-<p>GitHub</p>
-<p>Git</p>
-<p>Pixlr</p>
-<p>Google Images</p>
+<li>HTML5</li>
+<li>CSS</li>
+<li>JavaScript (ES6)</li>
+<li>GitHub</li>
+<li>Git</li>
+<li>Pixlr</li>
+<li>Google Images</li>
 
 <h2>Approach taken</h2>
  
@@ -51,12 +51,10 @@
 
 <h3>Future Features</h3>
 
-<li>
  <li>Two player mode.</li>
- <ul>Bug fixes - the pellet occasionally will spawn within the snake body.</ul>
- <ul>setInterval speed increase as a difficulty rise.</ul>
- <ul>Endgame functionality- should the player successfully fill the grid with the snake.</ul>
- </li>
+ <li>Bug fixes - the pellet occasionally will spawn within the snake body.</li>
+ <li>setInterval speed increase as a difficulty rise.</li>
+ <li>Endgame functionality- should the player successfully fill the grid with the snake.</li>
 
 <h3>Lessons Learned</h3>
 
