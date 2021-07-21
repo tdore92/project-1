@@ -1,4 +1,4 @@
-<h1>Project-1<h1>
+<h1>Project-1: Metroid Snake<h1>
 
 <h2>Overview</h2>
 
@@ -27,9 +27,19 @@
  
  <h3>The Grid</h3>
 
+ <p>The board itself was a 15x15 grid, made using HTML divs. I used JavaScript to append the divs as children of the grid.</p>
+
+ ```
+ for (let index = 0; index < elements.width ** 2; index++) {
+  const div = document.createElement('div')
+  elements.grid.appendChild(div)
+  elements.cells.push(div)
+}
+ ```
+
  <h3>Movement</h4>
 
-  <p>Figuring out the logic for the snakes movement was undoubtedly the most difficult element of this project. The solution was to- on an event listener- pop() the snake index from the array and unshift() it with a calculation equal to the keystroke, before adding the index back in. A setInterval would, with every pass, repeat this function until the next keydown event.</p>
+  <p>Figuring out the logic for the snakes movement was undoubtedly the most difficult element of this project. The snake itself was an array- each index serving as a segment. The solution was to pop the snake index from the array and unshift it with a calculation equal to the keystroke, then re-add the index. A setInterval would repeat this function until the next keydown event.</p>
 
   ```
   //update the control variable 
@@ -73,8 +83,9 @@ const moveInterval = setInterval(() => {
 
 }, 200)
   ```
+ <h3>Collisions</h3>
 
- <p>If the snake head [0] touched the grid edge or its own body, snakeCrash() would check the user score against the localStorage high score through an if/else statement. If the user score was higher, it would replace the previous score and  change the innerHTML of the score tag to match. The game would then be reset by gameOver() triggering a clearInterval, resetting the snakeArray back to 3 pieces on cells 97, 98 and 99 and the pellet to cell 36.</p>
+ <p>If the snake head [0] touched the grids edge or its own body, the game would check the user score against the high score. If the user score was higher, it would replace the previous high score. The game would then be reset by the gameOver function, resetting the snake back to 3 pieces on cells 97, 98 and 99 and the pellet to cell 36.</p>
 
  ```
  function snakeCrash() {
@@ -97,7 +108,7 @@ const moveInterval = setInterval(() => {
 
  <h4>Growth</h4>
 
-  <p>The snake itself was an array- each index serving as a segment. Should the snake ‘eat’ the pellet, a new index of 1 would be pushed into snakeArray, therefore following the movement logic of the rest of the body.</p>
+  <p>Should the snake ‘eat’ the pellet, a new index of 1 would be pushed into snakeArray, therefore following the movement logic of the rest of the body.</p>
 
   ```
   function eatPellet() {
@@ -120,7 +131,7 @@ const moveInterval = setInterval(() => {
 
  <h4>Pellet</h4>
 
- <p>The pellet itself consists of a single let variable with a number value, initially 36. Once it had been ‘eaten’, the eatPellet() function is triggered, removing the pellet from the classList, adding 100 points to the score variable (reflected in the score innerHTML) and replacing the initial pellet with a Math.random value. In turn, spawnPellet() adds the now randomly located pellet back into classList after checking for cells not containing the snake.</p>
+ <p>The pellet itself consisted of a single number value. Once it had been ‘eaten’, the eatPellet() function was triggered, removing the pellet, adding 100 points to the score, and giving the pellet a Math.random value. A spawn function would add the pellet back in after checking for cells not containing the snake.</p>
 
  ```
  function gameOver() {
@@ -146,6 +157,7 @@ elements.button.addEventListener('click', () => {
   location.reload()
 })
  ```
+ <p>To finish off, I added the visuals with a couple of google sourced images and used Pixlr to make my desired snake parts viable. I attempted to give each snake segment its own image, but decided against it with little time remaining, causing me to change my Pokemon theme to a Metroid one. Added in some game specific sounds upon eating the pellet and 'dying', and my first GA project was complete(ish)!</p>
 
 <img src="https://i.imgur.com/WlwChmr.png" alt="metroid snake image"/>
 
@@ -153,8 +165,9 @@ elements.button.addEventListener('click', () => {
 
  <li>Two player mode.</li>
  <li>Bug fixes - the pellet occasionally will spawn within the snake body.</li>
- <li>setInterval speed increase as a difficulty rise.</li>
+ <li>Add a setInterval speed increase as a difficulty rise.</li>
  <li>Endgame functionality- should the player successfully fill the grid with the snake.</li>
+ <li>Minor aesthetic changes.</li>
 
 <h3>Lessons Learned</h3>
 

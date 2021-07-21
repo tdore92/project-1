@@ -9,13 +9,12 @@ const elements = {
   highScore: document.querySelector('#high-score'),
   button: document.querySelector('#button'),
 }
-//let isPlayer = false
+
 
 
 for (let index = 0; index < elements.width ** 2; index++) {
   const div = document.createElement('div')
   elements.grid.appendChild(div)
-  //div.innerHTML = index
   elements.cells.push(div)
 }
 
@@ -25,8 +24,7 @@ for (let index = 0; index < elements.width ** 2; index++) {
 elements.snakeArray.push(97, 98, 99)
 elements.snakeArray.forEach(snakepart => elements.cells[snakepart].classList.add('caterpie-left'))
 console.log(elements.snakeArray[0])
-//elements.pellet.push(62)
-//console.log(elements.pellet[0])
+
 
 
 //CHECK MOVEMENT
