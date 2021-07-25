@@ -6,12 +6,9 @@
 
 <h2>Brief</h2>
 
-<li>Create a game of ‘Snake’, where the player guides a snake to consume pellets.</li>
-<li>The food/pellet is placed randomly on the grid. When pellet is eaten, it is reassigned to a random square.</li>
-<li>The snake grows longer, and becomes faster, with each pellet eaten. If the snake touches either the edge of the grid or itself, the game ends.</li>
-<li>Game must be rendered in the browser & deployed online.</li>
-<li>Adhere to the KISS (Keep It Simple Stupid) principles.</li>
-<li>Design logic for snake movement and the ultimate endgame.</li>
+* The snake should be able to eat food to grow bigger.
+* The game should end when the snake hits the wall or itself.
+* Snake speeds up as it eats more.
 
 <h2>Technologies Used</h2>
 
@@ -33,7 +30,7 @@
 <li>How to add segments to the snake</li>
 <li>How the score & high score would work</li>
 
-Once this was done the TA's checked my code to verify I was on the right path and I was free to proceed with the projects.</p>
+<p>Once this was done the TAs checked my code to verify I was on the right path and I was free to proceed with the projects.</p>
  
  <h3>The Grid</h3>
 
