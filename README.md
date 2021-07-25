@@ -24,6 +24,16 @@
 <li>Google Images</li>
 
 <h2>Approach taken</h2>
+
+<p>Before beginning the project I sat down and pseudo-coded out my intial thoughts and logic on how I would develop the game, which included:</p>
+
+<li>The board</li>
+<li>How to control the snake</li>
+<li>How the pellet would function</li>
+<li>How to add segments to the snake</li>
+<li>How the score & high score would work</li>
+
+Once this was done the TA's checked my code to verify I was on the right path and I was free to proceed with the projects.</p>
  
  <h3>The Grid</h3>
 
@@ -160,6 +170,16 @@ elements.button.addEventListener('click', () => {
  <p>To finish off, I added the visuals with a couple of google sourced images and used Pixlr to make my desired snake parts viable. I attempted to give each snake segment its own image, but decided against it with little time remaining, causing me to change my Pokemon theme to a Metroid one. Added in some game specific sounds upon eating the pellet and 'dying', and my first GA project was complete(ish)!</p>
 
 <img src="https://i.imgur.com/WlwChmr.png" alt="metroid snake image"/>
+
+<h3>Wins</h3>
+
+<p>Styling: After finishing the code I had limited time left to style, but I felt what I put together excuded that 8-bit Metroid feel successfully, and- with the help of the audio cues- eating a pellet feels quite satisfying!</p>
+
+<p>Functionality: Each bit of progress I made felt like a real step forward, from moving the snake, to successfully adding a segment, to having the whole snake move as desired.</p>
+
+<h3>Challenges</h3>
+
+<p>Movement: Solving this problem was integral to helping me understand how to approach the other issues, mainly using setIntervals to check the positions of the snake and if/else statements to correct its course if needed. This logic of constant check and response extended to the pellet and whether it was being eaten or not.</p>
 
 <h3>Future Features</h3>
 
