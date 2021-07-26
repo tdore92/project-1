@@ -2,7 +2,9 @@
 
 <h2>Overview</h2>
 
-<p>For our first GA project, we were asked to create a grid based game, rendered in browser, using JavaScript, CSS and HTML. We had multiple game type to choose from- I decided upon the 90’s classic, Snake. This project was to be created solo.</p>
+<p>For our first GA project, we were asked to create a grid based game, rendered in browser, using JavaScript, CSS and HTML. We had multiple game types to choose from- I decided upon the 90’s classic, Snake. This project was to be created solo, and within 1 week.</p>
+
+<a href="https://tdore92.github.io/project-1/">Play Metroid Snake here</a>
 
 <h2>Brief</h2>
 
@@ -24,12 +26,12 @@
 
 <p>Before beginning the project I sat down and pseudo-coded out my intial thoughts and logic on how I would develop the game, which included:</p>
 
-<li>The board</li>
-<li>How to control the snake</li>
-<li>How the pellet would function</li>
-<li>How to add segments to the snake</li>
-<li>How the score & high score would work</li>
-
+<li>The board.</li>
+<li>How to control the snake.</li>
+<li>How the pellet would function.</li>
+<li>How to add segments to the snake.</li>
+<li>How the score & high score would work.</li>
+<br/>
 <p>Once this was done the TAs checked my code to verify I was on the right path and I was free to proceed with the projects.</p>
  
  <h3>The Grid</h3>
@@ -164,7 +166,7 @@ elements.button.addEventListener('click', () => {
   location.reload()
 })
  ```
- <p>To finish off, I added the visuals with a couple of google sourced images and used Pixlr to make my desired snake parts viable. I attempted to give each snake segment its own image, but decided against it with little time remaining, causing me to change my Pokemon theme to a Metroid one. Added in some game specific sounds upon eating the pellet and 'dying', and my first GA project was complete(ish)!</p>
+ <p>To finish off, I added the visuals with a couple of Google sourced images and used Pixlr to make my desired snake parts viable. I attempted to give each snake segment its own image, but decided against it with little time remaining, causing me to change my Pokemon theme to a Metroid one. Added in some game specific sounds upon eating the pellet and 'dying', and my first GA project was complete(ish)!</p>
 
 <img src="https://i.imgur.com/WlwChmr.png" alt="metroid snake image"/>
 
@@ -178,11 +180,15 @@ elements.button.addEventListener('click', () => {
 
 <p>Movement: Solving this problem was integral to helping me understand how to approach the other issues, mainly using setIntervals to check the positions of the snake and if/else statements to correct its course if needed. This logic of constant check and response extended to the pellet and whether it was being eaten or not.</p>
 
+<h3>Bugs</h3>
+
+<li>The pellet will sometimes spawn inside the snake, logic fix needed.</li>
+<li>The HTML displaying the score will move when the first pellet is eaten.</li>
+
 <h3>Future Features</h3>
 
  <li>Two player mode.</li>
- <li>Bug fixes - the pellet occasionally will spawn within the snake body.</li>
- <li>Add a setInterval speed increase as a difficulty rise.</li>
+ <li>Add a setInterval speed increase as the snake eats.</li>
  <li>Endgame functionality- should the player successfully fill the grid with the snake.</li>
  <li>Minor aesthetic changes.</li>
 
